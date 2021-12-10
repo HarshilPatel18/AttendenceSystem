@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOffWhite"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".View.Fragments.UserFragment">
+
+    <include
+        layout="@layout/ats_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start" />
+
+    <com.github.tlaabs.timetableview.TimetableView
+        android:id="@+id/timetable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="90dp"
+        app:cell_height="70dp"
+        app:column_count="7"
+        app:header_highlight_color="@color/colorBlack"
+        app:header_title="@array/timetable_header"
+        app:row_count="12"
+        app:side_cell_width="40dp"
+        app:start_time="8"
+        app:sticker_colors="@array/my_sticker_color" />
+</LinearLayout>

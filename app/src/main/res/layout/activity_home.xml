@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.HomeActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+    </FrameLayout>
+
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+
+        android:fadingEdge="vertical"
+        android:padding="0dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:cornerRadius="50dp"
+        app:elevation="5dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/colorBlack"
+        app:iconTintActive="@color/colorPrimary"
+        app:indicatorColor="@color/colorBlack"
+        app:indicatorRadius="50dp"
+        app:menu="@menu/navigation"
+        app:textColor="@color/colorPrimary"
+        app:textSize="12sp" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

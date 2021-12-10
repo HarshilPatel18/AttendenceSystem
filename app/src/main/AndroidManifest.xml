@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyberia.attendencesystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ats"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_ats_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.statsActivity"
+            android:theme="@style/loginTheme" />
+        <activity
+            android:name=".View.AlertEmailActivity"
+            android:theme="@style/loginTheme" />
+        <activity android:name=".View.EditProfileActivity" />
+        <activity
+            android:name=".View.AddLectureActivity"
+            android:theme="@style/loginTheme" />
+        <activity
+            android:name=".View.StudentsActivity"
+            android:theme="@style/ChipTheme" />
+        <activity
+            android:name=".View.LoginActivity"
+            android:theme="@style/loginTheme" />
+        <activity
+            android:name=".View.HomeActivity"
+            android:theme="@style/ChipTheme" />
+        <activity
+            android:name=".View.ViewStatsActivity"
+            android:theme="@style/loginTheme" />
+        <activity
+            android:name=".View.MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://f0e7c940fee34e22890694b26af82a0a@o367714.ingest.sentry.io/5594623" />
+    </application>
+
+</manifest>

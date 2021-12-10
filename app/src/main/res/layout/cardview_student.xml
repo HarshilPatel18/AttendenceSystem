@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewStudent"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textViewRollNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Roll No : 19"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Student Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubjectName"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupAttendence"
+            app:singleSelection="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAbsent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedIconVisible="false"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/text_color_chip_state"
+                app:chipBackgroundColor="@color/bg_red_colorchip"
+                app:checkedIconTint="@color/colorPrimary"
+                app:rippleColor="@color/colorRed"
+                style="@style/CustomChipChoice"
+                android:text="Absent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedIconVisible="false"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/text_color_chip_state"
+                app:chipBackgroundColor="@color/background_color_chip"
+                app:checkedIconTint="@color/colorPrimary"
+                style="@style/CustomChipChoice"
+                android:text="Present" />
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
